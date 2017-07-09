@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title>Pontarelli | Hangman</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="./assets/javascript/game.js"></script>
+
+</head>
+<body>
+
+<!-- This is where the header logo will go -->
+<div class="row">
+	<div class="col-sm-12 center">
+		<img src="./assets/images/decoderlogo.png" class="img-responsive">
+	</div>	
+</div>
+
+
+<!-- This section sets up the html for the body of the game -->
+  <div class="row">
+    <div class="col-sm-1"> 
+    </div>
+    <div class="col-sm-10" id="topmiddle">
+      <h4 class="text-center">In order to access the vault, you must decode 5 passwords.  You are allowed 10 incorrect letter choices per password. Press any key to get started.</h1>
+      <br>
+      <p class="text-center" id="puzzle"> </p>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+
+<!-- This section sets up the area that will show progress bars - remaining guess and level completion.   -->
+  
+  <!-- this is the row showing the remaining tries -->
+  <div class="row">
+   <div class="col-sm-1"></div>
+    <div class="col-sm-10" id="bottmiddle">
+	    <div class="row" id="remainingtries">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+        <h3 class="guessesremaining">Guesses Remaining: </h3>
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+              70% Complete (danger)
+          </div> 
+        </div>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+      
+  <!-- This is the row showing the level progress -->
+  <div class="row" id="levelcompletion">
+   <div class="col-sm-1"></div>
+    <div class="col-sm-10">      
+        <h3 id="passwordscompleted">Level Completion: </h3>    
+          <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">40% Complete (success)</div>
+          </div>   
+    </div>  
+   </div>
+   <div class="col-sm-1"></div>
+  </div>
+  <div class="col-sm-1"></div>
+  </div>
+
+
+
+
+</body>
+</html>
